@@ -1,0 +1,10 @@
+.jumbotron
+{
+	opacity: .5;
+}
+
+.character
+{
+	background-color: white;
+	border-style: solid;
+}
