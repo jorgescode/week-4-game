@@ -142,6 +142,8 @@ function attacking(myCharacter, enemy)
 		var myCharacterMessage = $('<h1>').text('YO U GOT HIT FOR ' + enemy.attr('cap') + ' damage!');
 		var enemyMessage = $('<h1>').text('U ATTAKED \'EM ' + myCharacter.attr('ap') + ' damage!')
 		$('#battleReport').empty().append(report.append(myCharacterMessage).append(enemyMessage));
+		var ap = 2*myCharacter.attr('ap');
+		myCharacter.attr('ap', ap);
 	});
 }
 
